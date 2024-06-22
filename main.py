@@ -25,10 +25,8 @@ start = 0
 for letter in chosen_word:
   if guess == letter:
     display[start] = guess
-    print("correct")
-  else:
-    print("wrong")
   start += 1
 
 #TODO-3: - Print 'display' and you should see the guessed letter in the correct position and every other letter replace with "_".
 #Hint - Don't worry about getting the user to guess the next letter. We'll tackle that in step 3.
+print(display)
