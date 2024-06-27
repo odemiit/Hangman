@@ -93,9 +93,11 @@ while "_" in display and lives > 0:
   if guess not in chosen_word:
     lives -= 1
 
-  print(lives)
-  #Join all the elements in the list and turn it into a String.
-  print(f"{' '.join(display)}")
+  if lives == 0:
+    print("You lose.")
+  else:
+    #Join all the elements in the list and turn it into a String.
+    print(f"{' '.join(display)}")
 
   #Check if user has got all letters.
   if "_" not in display:
